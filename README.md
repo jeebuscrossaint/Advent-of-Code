@@ -6,21 +6,28 @@ Hello wearey traveller across the land of frontend source control management wit
 
 ## Navigation
 
-All the challenges are spread into days and their respective parts. Here is a sample output of 'tree' on day 1.
+All the challenges are spread into days and their respective parts. Here is a sample output of 'tree' on day 2.
 ```
 ❯ tree
 .
 ├── README.md
 └── src
-    └── Day 1
+    ├── Day 1
+    │   ├── Part 1
+    │   │   ├── input.txt
+    │   │   └── Trebuchet?!.cpp
+    │   └── Part 2
+    │       ├── input.txt
+    │       └── Trebuchet?!.cpp
+    └── Day 2
         ├── Part 1
-        │   ├── input.txt
-        │   └── Trebuchet?!.cpp
+        │   ├── Cube Conundrum.cpp
+        │   └── input.txt
         └── Part 2
-            ├── input.txt
-            └── Trebuchet?!.cpp
+            ├── Cube Conundrum.cpp
+            └── input.txt
 
-5 directories, 5 files
+8 directories, 9 files
 ```
 
 If I do this next year the navigation style will probably change, with a respective folder for 2023, and a new folder for 20XX.
