@@ -41,9 +41,9 @@ Default behaviour:
 - If no day/year provided, uses current date during December
 - Outside December, defaults to day 1 of current year
 - Cookie is stored in ~/.cache/aocli/cookie
-- Inputs are cached in ~/.cached/aocli/inputs
+- Inputs are cached in ~/.cache/aocli/inputs
 - Problem descriptions are cached in ~/.cached/aocli/problems
-- Answers are cached in ~/.cached/aocli/answers
+- Answers are cached in ~/.cache/aocli/answers
 
 Argument ranges:
 
