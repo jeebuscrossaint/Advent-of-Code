@@ -228,6 +228,9 @@ int main(int argc, char **argv) {
                 std::cout << "Cookie is invalid or expired." << std::endl;
             }
         }
+        else if (command == "version" || "-v") {
+                std::cout << "aocli v1.0 using libcurl and gumbo-parser" << std::endl;
+        }
         else {
             std::cerr << "Unknown command: " << command << std::endl;
             help();
