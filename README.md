@@ -1,4 +1,4 @@
-# Advent of Codee
+# Advent of Code
 
 My advent of codes throughout the years
 
