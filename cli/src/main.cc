@@ -4,17 +4,43 @@
 #include "aocli.hh"
 
 void help() {
-    std::cout << "Usage: aoc <command> [day] [year]" << std::endl;
-    std::cout << "Commands:" << std::endl;
-    std::cout << "  fetch         - Download input (defaults to today)" << std::endl;
-    std::cout << "  view          - View problem statement" << std::endl;
-    std::cout << "  submit        - Submit answer" << std::endl;
-    std::cout << "  update-cookie - Update session cookie" << std::endl;
-    std::cout << "  cookie-status - Check if cookie is valid" << std::endl;
-    std::cout << "Optional arguments:" << std::endl;
-    std::cout << "  day    - Specific day (1-25)" << std::endl;
-    std::cout << "  year   - Specific year" << std::endl;
-    std::cout << "  -f, --refresh  Force refresh cached content" << std::endl;
+    std::cout << "Usage: aocli <command> [options] [arguments]\n\n";
+
+    std::cout << "Commands:\n";
+    std::cout << "  fetch         Fetch puzzle input\n";
+    std::cout << "                aocli fetch [day] [year]\n";
+    std::cout << "                aocli fetch -f [day] [year]      (force refresh)\n\n";
+
+    std::cout << "  view          View puzzle description\n";
+    std::cout << "                aocli view [day] [year]\n";
+    std::cout << "                aocli view -f [day] [year]       (force refresh)\n\n";
+
+    std::cout << "  submit        Submit puzzle answer\n";
+    std::cout << "                aocli submit <part> <answer> [day] [year]\n";
+    std::cout << "                part: 1 or 2\n";
+    std::cout << "                answer: your solution\n\n";
+
+    std::cout << "  update-cookie Update session cookie\n";
+    std::cout << "                aocli update-cookie\n\n";
+
+    std::cout << "  cookie-status Check cookie validity\n";
+    std::cout << "                aocli cookie-status\n\n";
+
+    std::cout << "Options:\n";
+    std::cout << "  -f, --refresh Force refresh cached content\n\n";
+
+    std::cout << "Arguments:\n";
+    std::cout << "  day           Puzzle day (1-25)\n";
+    std::cout << "  year          Puzzle year (2015-present)\n";
+    std::cout << "                If not provided, defaults to current day/year\n";
+    std::cout << "                during December, or day 1 otherwise\n\n";
+
+    std::cout << "Examples:\n";
+    std::cout << "  aocli fetch                    Fetch today's input\n";
+    std::cout << "  aocli fetch 1 2023             Fetch day 1, 2023 input\n";
+    std::cout << "  aocli view -f 5 2022           View day 5, 2022 puzzle (force refresh)\n";
+    std::cout << "  aocli submit 1 \"123\" 3 2023    Submit 123 as part 1 answer for day 3, 2023\n";
+    std::cout << "  aocli update-cookie            Update session cookie\n";
 }
 
 int main(int argc, char **argv) {
