@@ -16,6 +16,20 @@ ____
 
 In the `cli` folder you can find the source code to a C++ written CLI utility that I use to speed up my times for advent of code.
 
+Compilation:
+
+It depends on 2 libraries, `curl`, and `gumbo`. Both gumbo and curl should be available in your package manager.
+Curl is of course the famous command line tool and library for transferring data with URLs.
+Gumbo is a HTML5 parsing library, which is used to parse the problem descriptions from the advent of code website.
+
+```bash
+git clone https://github.com/jeebuscrossaint/advent-of-code.git
+cd advent-of-code/cli
+make
+# If you want to install it to your system
+sudo make install # only works on unix systems
+```
+
 It can so far,
 
 Fetch the input for a given day
